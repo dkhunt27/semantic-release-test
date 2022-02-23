@@ -2,6 +2,11 @@
     "branches": [ "main" ],
     "plugins": [
         "@semantic-release/commit-analyzer",
+        ["@semantic-release/exec",
+            {
+              "verifyRelease": "echo ::set-output name=nextVer::${nextRelease.version}"
+            }
+          ],
         "@semantic-release/release-notes-generator",
         "@semantic-release/github"
     ]

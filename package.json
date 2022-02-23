@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "repository": "https://github.com/dkhunt27/semantic-release-test.git",
   "dependencies": {
+    "@semantic-release/exec": "^6.0.3",
     "semantic-release": "^19.0.2"
   }
 }
