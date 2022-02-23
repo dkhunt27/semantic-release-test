@@ -75,7 +75,6 @@ jobs:
           echo ${{ steps.semanticRelease.outputs.new_release_notes }}
 
       - name: Semantic Release
-        id: semanticRelease
         uses: cycjimmy/semantic-release-action@v2
         with:
           semantic_version: 18
