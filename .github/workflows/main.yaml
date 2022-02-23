@@ -53,9 +53,9 @@ jobs:
 
       - name: Semantic Release
         run: |
-          yarn semantic_version --dry_run
+          yarn semantic-release --dry_run
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
 
       - name: Do something when a new release published (FALSE)
