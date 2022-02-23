@@ -4,7 +4,7 @@
         "@semantic-release/commit-analyzer",
         ["@semantic-release/exec",
             {
-              "verifyReleaseCmd": "echo ::set-output name=nextVer::${nextRelease.version}"
+              "verifyReleaseCmd": "./sr.sh"
             }
           ],
         "@semantic-release/release-notes-generator",
